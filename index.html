@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="responsive.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de Divisas</title>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-... (código de integridad) ..." crossorigin="anonymous" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>Conversor de Divisas</h1>
+    <div class="iconos">
+      <img src="estados-unidos.png" height="60">
+      <img src="nicaragua.png" height="60">
+      <img src="union-europea.png" height="60">
+
+
+
+    </div>
+    <label for="monto">Monto:</label>
+    <input type="number" min="0" id="monto" />
+
+    <label for="divisaOrigen">Divisa de origen:</label>
+    <select id="divisaOrigen">
+      <option value="USD">Dólar estadounidense (USD)</option>
+      <option value="EUR">Euro (EUR)</option>
+      <option value="NIO">Córdoba nicaragüense (NIO)</option>
+    </select>
+
+    <label for="divisaDestino">Divisa de destino:</label>
+    <select id="divisaDestino">
+      <option value="USD">Dólar estadounidense (USD)</option>
+      <option value="EUR">Euro (EUR)</option>
+      <option value="NIO">Córdoba nicaragüense (NIO)</option>
+    </select>
+
+    <button onclick="convertir()">CONVERTIR</button>
+
+    <div class="recuadro" id="resultado"></div>
+  </div>
+</body>
+<footer>
+  &copy; 2023 Creado por: Luis Enmanuel Zelaya O'meany, Kevin Alejandro Aburto Guerrero, Sofia Alejandra Jarquin.</p>
+  Todos los derechos reservados.
+</footer>
+
+</html>
